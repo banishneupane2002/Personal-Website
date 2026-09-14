@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Toolkit() {
   return (
-    <section id="toolkit" className="py-24 sm:py-32 px-6 bg-white border-b border-zinc-200">
+    <section id="toolkit" className="py-24 sm:py-32 px-6 border-b border-zinc-200/80">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -39,7 +39,7 @@ export default function Toolkit() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: idx * 0.08 }}
               whileHover={{ y: -4 }}
-              className="p-6 sm:p-8 rounded-2xl bg-zinc-50/70 border border-zinc-200 flex flex-col justify-between hover:bg-white hover:border-zinc-300 hover:shadow-md transition-all duration-200"
+              className="p-6 sm:p-8 rounded-3xl bg-white/75 border border-zinc-200/80 backdrop-blur-md flex flex-col justify-between hover:bg-white hover:border-zinc-300 hover:shadow-md transition-all duration-200"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
@@ -59,7 +59,7 @@ export default function Toolkit() {
                     key={skill}
                     whileHover={{ scale: 1.06, y: -1.5 }}
                     transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-white border border-zinc-200 text-zinc-800 shadow-2xs hover:border-zinc-500 transition-colors cursor-default"
+                    className="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/90 border border-zinc-200/90 text-zinc-800 shadow-2xs hover:border-zinc-500 transition-colors cursor-default"
                   >
                     {skill}
                   </motion.span>

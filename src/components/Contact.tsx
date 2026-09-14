@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <footer id="contact" className="pt-24 sm:pt-32 pb-16 px-6 bg-white">
+    <footer id="contact" className="pt-24 sm:pt-32 pb-16 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Contact Header Card */}
         <motion.div
@@ -140,7 +140,7 @@ export default function Contact() {
         </motion.div>
 
         {/* Bottom Metadata & Footer */}
-        <div className="mt-16 pt-8 border-t border-zinc-200 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-zinc-500">
+        <div className="mt-16 pt-8 border-t border-zinc-200/80 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-zinc-500">
           <div className="flex flex-wrap items-center gap-6">
             <div className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-zinc-400" />

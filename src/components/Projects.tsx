@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <section id="work" className="py-24 sm:py-32 px-6 bg-stone-50/60 border-b border-zinc-200">
+    <section id="work" className="py-24 sm:py-32 px-6 border-b border-zinc-200/80">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -40,7 +40,7 @@ export default function Projects() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               whileHover={{ y: -5 }}
-              className="group relative rounded-2xl bg-white border border-zinc-200/90 p-7 sm:p-10 shadow-xs hover:shadow-xl transition-all duration-300 hover:border-zinc-400"
+              className="group relative rounded-3xl bg-white/80 backdrop-blur-md border border-zinc-200/90 p-7 sm:p-10 shadow-xs hover:shadow-xl transition-all duration-300 hover:border-zinc-400"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 {/* Number & Category Column */}
@@ -49,7 +49,7 @@ export default function Projects() {
                     <span className="text-4xl sm:text-5xl font-mono font-black tracking-tighter text-zinc-300 group-hover:text-zinc-950 transition-colors duration-300">
                       {project.number}
                     </span>
-                    <div className="mt-3 inline-block px-3 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-[11px] font-mono font-medium text-zinc-700 uppercase tracking-wide">
+                    <div className="mt-3 inline-block px-3 py-1 rounded-full bg-zinc-100/90 border border-zinc-200 text-[11px] font-mono font-medium text-zinc-700 uppercase tracking-wide">
                       {project.category}
                     </div>
                   </div>
@@ -80,7 +80,7 @@ export default function Projects() {
                         <motion.span
                           key={tag}
                           whileHover={{ scale: 1.05 }}
-                          className="px-3 py-1 rounded-md text-xs font-mono font-medium bg-zinc-50 border border-zinc-200 text-zinc-700 shadow-2xs cursor-default"
+                          className="px-3 py-1 rounded-md text-xs font-mono font-medium bg-zinc-50 border border-zinc-200/80 text-zinc-700 shadow-2xs cursor-default"
                         >
                           {tag}
                         </motion.span>
@@ -97,7 +97,7 @@ export default function Projects() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-300 bg-white text-zinc-800 text-xs font-semibold tracking-wider uppercase hover:border-zinc-950 hover:bg-zinc-950 hover:text-white transition-colors shadow-2xs cursor-pointer"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-300 bg-white/90 text-zinc-800 text-xs font-semibold tracking-wider uppercase hover:border-zinc-950 hover:bg-zinc-950 hover:text-white transition-colors shadow-2xs cursor-pointer"
                       >
                         <GithubIcon className="w-3.5 h-3.5" />
                         <span>Source Code</span>
@@ -131,7 +131,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-12 p-8 sm:p-10 rounded-2xl border border-zinc-200 bg-white text-center flex flex-col items-center justify-center gap-4 shadow-2xs"
+          className="mt-12 p-8 sm:p-10 rounded-3xl border border-zinc-200/80 bg-white/80 backdrop-blur-md text-center flex flex-col items-center justify-center gap-4 shadow-2xs"
         >
           <Code2 className="w-8 h-8 text-zinc-400" />
           <h4 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
