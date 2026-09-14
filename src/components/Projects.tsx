@@ -55,12 +55,12 @@ export default function Projects() {
                   </div>
 
                   <div className="mt-6 lg:mt-12">
-                    <span className="block text-[11px] font-mono text-zinc-400 uppercase tracking-wider">
+                    {/* <span className="block text-[11px] font-mono text-zinc-400 uppercase tracking-wider">
                       Role
                     </span>
                     <span className="text-xs font-semibold text-zinc-800">
                       {project.role}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
 

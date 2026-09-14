@@ -27,15 +27,16 @@ export const portfolioData = {
     tagline: "Designing, building, and shipping robust software from low-level systems to modern web applications.",
     status: "Available for new opportunities",
     location: "Kathmandu, Nepal",
-    email: "banishneupane@gmail.com", // update with your preferred email
+    email: "banishrox@gmail.com", // update with your preferred email
     photoUrl: "/profile.jpg",
     resumeUrl: "#", // link to your CV/resume PDF or Google Drive
   },
 
   socials: {
-    github: "https://github.com/banishneupane", // replace with your actual username
-    linkedin: "https://linkedin.com/in/banishneupane", // replace with your actual username
-    twitter: "https://twitter.com/banishneupane", // replace or remove if not used
+    github: "https://github.com/banishneupane2002", // replace with your actual username
+    linkedin: "https://www.linkedin.com/in/banish-neupane-b3565224a/", // replace with your actual username
+    twitter: "https://twitter.com/banishneupane",
+    instagram: "https://instagram.com/banishneupane" // replace or remove if not used
   },
 
   about: {
@@ -68,9 +69,9 @@ export const portfolioData = {
       accentColor: "border-blue-500/30 hover:border-blue-500",
     },
     {
-      id: "finpulse-dashboard",
+      id: "Acme-app",
       number: "002",
-      title: "FinPulse Analytics",
+      title: "Full St",
       category: "Full-Stack Web",
       role: "Full-Stack Developer",
       description:
@@ -141,4 +142,5 @@ export const portfolioData = {
     },
   ] as SkillCategory[],
 };
+
 
