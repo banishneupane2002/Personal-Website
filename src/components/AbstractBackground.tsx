@@ -1,59 +1,58 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function AbstractBackground() {
   return (
     <div
-      className="fixed inset-0 pointer-events-none -z-20 overflow-hidden bg-[#faf9f6]"
+      className="fixed inset-0 pointer-events-none -z-20 overflow-hidden bg-[#fafafa]"
       aria-hidden="true"
     >
-      {/* 1. Animated Fluid Gradient Mesh Orbs */}
-      <motion.div
-        animate={{
-          x: [0, 80, -40, 0],
-          y: [0, -60, 40, 0],
-          scale: [1, 1.15, 0.95, 1],
-        }}
-        transition={{
-          duration: 22,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute -top-[15%] -left-[10%] w-[800px] h-[800px] rounded-full bg-gradient-to-br from-amber-200/25 via-orange-100/20 to-transparent blur-3xl opacity-80"
-      />
+      {/* 1. High-Res 3D Abstract Wave Image */}
+      <div className="absolute inset-0 opacity-[0.38] mix-blend-multiply">
+        <Image
+          src="/abstract-bg.jpg"
+          alt="Abstract white wave background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      </div>
 
+      {/* 2. Soft Animated Fluid Gradient Mesh Orbs */}
       <motion.div
         animate={{
-          x: [0, -90, 50, 0],
-          y: [0, 80, -50, 0],
-          scale: [1, 1.2, 0.9, 1],
-        }}
-        transition={{
-          duration: 26,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute top-[35%] -right-[15%] w-[850px] h-[850px] rounded-full bg-gradient-to-bl from-blue-200/20 via-indigo-100/20 to-transparent blur-3xl opacity-75"
-      />
-
-      <motion.div
-        animate={{
-          x: [0, 60, -60, 0],
-          y: [0, 40, -40, 0],
+          x: [0, 60, -30, 0],
+          y: [0, -40, 30, 0],
           scale: [1, 1.1, 0.95, 1],
         }}
         transition={{
-          duration: 18,
+          duration: 20,
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute -bottom-[15%] left-[20%] w-[750px] h-[750px] rounded-full bg-gradient-to-tr from-emerald-100/20 via-teal-100/15 to-transparent blur-3xl opacity-70"
+        className="absolute -top-[10%] -left-[10%] w-[700px] h-[700px] rounded-full bg-gradient-to-br from-amber-100/30 via-orange-50/20 to-transparent blur-3xl opacity-70"
       />
 
-      {/* 2. Abstract Architectural Isometric Grid Overlay */}
+      <motion.div
+        animate={{
+          x: [0, -60, 40, 0],
+          y: [0, 50, -40, 0],
+          scale: [1, 1.15, 0.9, 1],
+        }}
+        transition={{
+          duration: 24,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute top-[40%] -right-[10%] w-[750px] h-[750px] rounded-full bg-gradient-to-bl from-blue-100/25 via-indigo-50/20 to-transparent blur-3xl opacity-60"
+      />
+
+      {/* 3. Delicate Architectural Isometric Grid Lines */}
       <div
-        className="absolute inset-0 opacity-[0.45]"
+        className="absolute inset-0 opacity-[0.25]"
         style={{
           backgroundImage: `
             linear-gradient(to right, rgba(24, 24, 27, 0.05) 1px, transparent 1px),
@@ -67,19 +66,9 @@ export default function AbstractBackground() {
         }}
       />
 
-      {/* 3. Subtle Dot Matrix Accent */}
-      <div
-        className="absolute inset-0 opacity-[0.35]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(24, 24, 27, 0.12) 1px, transparent 1px)",
-          backgroundSize: "24px 24px",
-        }}
-      />
-
-      {/* 4. Fine Paper Noise Grain */}
+      {/* 4. Fine Tactile Grain */}
       <svg
-        className="absolute inset-0 w-full h-full opacity-[0.035] mix-blend-multiply pointer-events-none"
+        className="absolute inset-0 w-full h-full opacity-[0.03] mix-blend-multiply pointer-events-none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <filter id="noiseFilter">
