@@ -1,8 +1,25 @@
 "use client";
 
 import { portfolioData, SkillCategory } from "@/data/portfolioData";
-import { Layers } from "lucide-react";
+import {
+  Code2,
+  Server,
+  Database,
+  Sparkles,
+  ShieldCheck,
+  Terminal,
+  Layers,
+} from "lucide-react";
 import { motion } from "framer-motion";
+
+const categoryIcons: Record<string, React.ElementType> = {
+  "Frontend Engineering": Code2,
+  "Backend & Systems": Server,
+  "Data & Storage": Database,
+  "AI & Applied Intelligence": Sparkles,
+  "QA & Test Automation": ShieldCheck,
+  "DevOps & Core Tools": Terminal,
+};
 
 export default function Toolkit() {
   return (
@@ -46,7 +63,14 @@ export default function Toolkit() {
                   <h3 className="text-lg font-bold tracking-tight text-zinc-900">
                     {category.title}
                   </h3>
-                  <Layers className="w-4 h-4 text-zinc-400" />
+                  {(() => {
+                    const Icon = categoryIcons[category.title] || Layers;
+                    return (
+                      <div className="w-8 h-8 rounded-lg bg-white border border-zinc-200/80 flex items-center justify-center text-zinc-600 shadow-2xs">
+                        <Icon className="w-4 h-4 text-zinc-700" />
+                      </div>
+                    );
+                  })()}
                 </div>
                 <p className="text-xs text-zinc-500 mb-6 leading-relaxed">
                   {category.description}

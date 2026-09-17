@@ -148,6 +148,21 @@ export const portfolioData = {
       skills: ["Text-to-SQL Pipelines", "LangChain", "LLM Integration", "Vector Embeddings", "Prompt Engineering"],
     },
     {
+      title: "QA & Test Automation",
+      description: "Ensuring software reliability, comprehensive test coverage, and automated defect detection.",
+      badgeColor: "bg-teal-50 text-teal-700 border-teal-200",
+      skills: [
+        "Playwright & Cypress (E2E)",
+        "Unit & Integration Testing",
+        "Jest / Vitest",
+        "PyTest",
+        "API Testing (Postman)",
+        "Test-Driven Development (TDD)",
+        "Regression & Smoke Testing",
+        "Defect Lifecycle & Bug Tracking",
+      ],
+    },
+    {
       title: "DevOps & Core Tools",
       description: "Development environments, version control, containerization, and deployment.",
       badgeColor: "bg-zinc-100 text-zinc-800 border-zinc-300",
