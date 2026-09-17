@@ -19,8 +19,9 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "WORK", href: "#work" },
+    
     { label: "ABOUT", href: "#about" },
+    { label: "WORK", href: "#work" },
     { label: "TOOLKIT", href: "#toolkit" },
     { label: "CONTACT", href: "#contact" },
   ];
