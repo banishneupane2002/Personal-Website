@@ -52,6 +52,9 @@ export const metadata: Metadata = {
     description:
       "Personal portfolio and engineering showcase of Banish Neupane.",
   },
+  verification: {
+    google: "lJCekLCj62h1jS0mz_X93tVBUbGMK_t8IkM5HbUM3Ks",
+  },
   robots: {
     index: true,
     follow: true,
@@ -107,6 +110,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}>
       <head>
+        <meta
+          name="google-site-verification"
+          content="lJCekLCj62h1jS0mz_X93tVBUbGMK_t8IkM5HbUM3Ks"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
