@@ -35,14 +35,14 @@ export default function Hero() {
         className="max-w-6xl mx-auto relative z-10"
       >
         {/* Eyebrow badge */}
-        <motion.div variants={itemVariants} className="inline-block mb-8">
+        {/* <motion.div variants={itemVariants} className="inline-block mb-8">
           <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-zinc-300/80 bg-white/90 text-zinc-700 text-xs font-mono font-medium tracking-wider uppercase shadow-2xs backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-zinc-900 animate-pulse" />
             <span>{portfolioData.personal.title}</span>
             <span className="text-zinc-300">•</span>
             <span>{portfolioData.personal.location}</span>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Editorial Headline */}
         <motion.h1
@@ -87,7 +87,7 @@ export default function Hero() {
             <ArrowUpRight className="w-4 h-4" />
           </motion.a>
 
-          <CopyEmailButton email={portfolioData.personal.email} />
+          {/* <CopyEmailButton className="text-black" email={portfolioData.personal.email} /> */}
         </motion.div>
 
         {/* Highlight ticker strip */}

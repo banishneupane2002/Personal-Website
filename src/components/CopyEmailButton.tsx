@@ -26,7 +26,7 @@ export default function CopyEmailButton({ email, className = "" }: CopyEmailButt
     <button
       onClick={handleCopy}
       type="button"
-      className={`relative inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-200 border border-zinc-300 bg-white text-zinc-800 hover:border-zinc-900 hover:bg-zinc-900 hover:text-white active:scale-95 cursor-pointer shadow-xs ${className}`}
+      className={`relative inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-200 border border-zinc-300 bg-white text-white hover:border-zinc-900 hover:bg-zinc-900 hover:text-white active:scale-95 cursor-pointer shadow-xs ${className}`}
       title="Click to copy email"
     >
       {copied ? (
